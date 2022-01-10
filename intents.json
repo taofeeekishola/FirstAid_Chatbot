@@ -2,25 +2,25 @@
         {"tag": "greeting",
          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "I need help","I need assistant"],
          "responses": ["Hello, how can I help?", "Hi there, how can I help?"],
-         "context": ""
+         "context": [""]
         },
 
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
          "responses": ["See you!", "Have a nice day"],
-         "context": ""
+         "context": [""]
         },
 
         {"tag": "thanks",
          "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "Life saver"],
          "responses": ["Happy to help!", "Any time!", "My pleasure"],
-         "context": ""
+         "context": [""]
        },
 
        {"tag": "options",
         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
         "responses": ["I am here to provide First Aid assistance","I can help with simple First Aid assiatnce before medics arrive"],
-        "context": ""
+        "context": [""]
        },
 
         {"tag": "Cuts",
@@ -29,24 +29,24 @@
          "context_set": ""
         },
 
-        {"tags": "Anaphylaxis",
+        {"tag": "Anaphylaxis",
          "patterns": ["What to do in case of Anaphylaxis shock", "Anaphylaxis", "Help friend Anaphylaxis","how can I treat Anaphylaxis"],
-         "responses": ["1)Check if the person is carrying any medication. 2)Assist in using medication. 3)Make sure they are comfortable, call 999 for medical assistance."]
+         "responses": ["1)Check if the person is carrying any medication. 2)Assist in using medication. 3)Make sure they are comfortable, call 999 for medical assistance "]
         },
 
-        {"tags": "Electric Shock",
+        {"tag": "Electric Shock",
          "patterns": ["How to treat Electric Shock","Electric Shock","Help Electric Shock","electrocuted", "friend has been electrocuted"],
          "responses": ["1)Switch off electrical current to break contact between person and electrical supply. 2)Do not approach the person unless electrical supply has been switched off. If person isn't breathing call for medical assistance(999)."]
         },
 
-        {"tags":"Heart Attack",
+        {"tag":"Heart Attack",
          "patterns" : ["What to do in case of Heart Attack", "Heart Attack", "help heart attaxk"],
          "responses": ["1)Call 999 and move the person to a comfortable sitting position. 2)If they're conscious, reassure them and ask them to take a 300mg aspirin tablet to chew slowly (unless they're under 16 or allergic to it). 3)If the person deteriorates and becomes unconscious, open their airway, check their breathing and, if necessary, start CPR."]
         },
 
         {"tag": "Abrasions",
          "patterns": ["how do you treat abrasions?", "Do Abrasions cause scars?", "Abrasions", "what to do if abrasions?", "Which medicine to apply for abrasions?", "How to cure abrasions?"],
-         "responses": ["1)Begin with washed hands. 2)Gently clean the area with cool to lukewarm water and mild soap. 3)Remove dirt or other particles from the wound using sterilized tweezers. 4)For a mild scrape that is not bleeding, leave the wound uncovered. 5)If the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding. 6)Cover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. 7)Cover it with a clean bandage or gauze. 8)Gently clean the wound and change the ointment and bandage once per day. 9)Watch the area for signs of infection, like pain or redness and swelling. 10)See your doctor if you suspect infection."],
+         "responses": ["1)Begin with washed hands. 2)Gently clean the area with cool to lukewarm water and mild soap. 3)Remove dirt or other particles from the wound using sterilized tweezers. 4)For a mild scrape that’s not bleeding, leave the wound uncovered. 5)If the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding. 6)Cover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. 7)Cover it with a clean bandage or gauze. 8)Gently clean the wound and change the ointment and bandage once per day. 9)Watch the area for signs of infection, like pain or redness and swelling. 10)See your doctor if you suspect infection."],
          "context_set": ""
         },
 
@@ -65,7 +65,7 @@
 
         {"tag": "Strains",
          "patterns": ["How do you treat a strain?", "what to do if i get a strain?", "Which cream to apply if i get a strain?", "Which medicine to apply if I get a strain?", "How do you diagnose a strain?", "Is heat or ice better for a pulled muscle?"],
-         "responses": ["Rest,Ice,Compression and Elevation can be used to cure strains. Avoid using your muscle for a few days, especially if movement causes an increase in pain and also Apply ice immediately after injuring your muscle. This will minimize swelling. Do not put ice directly on your skin. Use an ice pack or wrap ice in a towel. To reduce swelling, wrap the affected area with an elastic bandage until swelling comes down."],
+         "responses": ["Rest,Ice,Compression and Elevation can be used to cure strains. Avoid using your muscle for a few days, especially if movement causes an increase in pain and also Apply ice immediately after injuring your muscle. This will minimize swelling. Don’t put ice directly on your skin. Use an ice pack or wrap ice in a towel. To reduce swelling, wrap the affected area with an elastic bandage until swelling comes down."],
          "context_set": ""
         },
 
@@ -77,7 +77,7 @@
 
         {"tag": "Nasal Congestion",
          "patterns": ["How do you treat nasal Congestion?", "what to do if i get a nasal congestion?", "Which medicine to take if I have a nasal congestion?", "what to do if i have a blocked nose?", "How do you treat a blocked nose?", "How long does nasal congestion last?"],
-         "responses": ["When you are stuffed up, focus on keeping your nasal passages and sinuses moist. To keep your nasal passages moist, you can: 1)Use a humidifier or vaporizer. 2)Drink lots of fluids. This will thin out your mucus, which could help prevent blocked sinuses. 3)Place a warm, wet towel on your face. It may relieve discomfort and open your nasal passages."],
+         "responses": ["When you’re stuffed up, focus on keeping your nasal passages and sinuses moist. To keep your nasal passages moist, you can: 1)Use a humidifier or vaporizer. 2)Drink lots of fluids. This will thin out your mucus, which could help prevent blocked sinuses. 3)Place a warm, wet towel on your face. It may relieve discomfort and open your nasal passages."],
          "context_set": ""
         },
 

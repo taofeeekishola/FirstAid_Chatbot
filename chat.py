@@ -26,12 +26,9 @@ model.eval()
 
 
 bot_name = "Taofeek"
-print("Lets chat! type 'quit to exit")
-while True:
-    sentence = input("You: ")
-    if sentence == "quit":
-        break
-    sentence = tokenize(sentence)
+
+def get_response(msg):
+    sentence = tokenize(msg)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1, x.shape[0])
     x = torch.from_numpy(x)
@@ -46,9 +43,13 @@ while True:
     if prob.item() > 0.75:
         for intent in intents["intents"]:
             if tag == intent['tag']:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
-    else:
-        print(f"{bot_name}: I do not understand")
+                return random.choice(intent['responses'])
+    
+    return  "I do not understand"
+
+
+
+    
 
 
 

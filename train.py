@@ -5,6 +5,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
+import matplotlib.pyplot as plt
 
 from model import NeuralNet
 
@@ -91,6 +92,8 @@ for epoch in range(num_epochs):
 
 
 print(f'Final Loss, loss = {loss.item():.4f}')
+
+
 
 data ={
     "model_state": model.state_dict(),

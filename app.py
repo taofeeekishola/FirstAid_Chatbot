@@ -54,6 +54,12 @@ class ChatApplication:
         self.msg_entry.bind("<Return>", self._on_enter_pressed)
 
 
+        #send button
+        send_button = Button(bottom_label, text="send", font=FONT_BOLD, width=20, bg=BG_GRAY,
+                            command=lambda: self._on_enter_pressed(None))
+        send_button.place(relx=0.77, rely=0.008, relheight=0.06, relwidth=0.22)
+
+
     def _on_enter_pressed(self, event):
         msg = self.msg_entry.get()
         self._insert_message(msg, "You")
@@ -65,7 +71,7 @@ class ChatApplication:
         self.msg_entry.delete(0, END)
         msg1 = f"{sender}: {msg}"
         self.text_widget.configure(state=NORMAL)
-        self.text_widget.insert(END, msg)
+        self.text_widget.insert(END, msg1)
         self.text_widget.configure(state=DISABLED)
 
 

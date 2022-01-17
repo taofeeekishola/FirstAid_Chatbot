@@ -18,8 +18,14 @@
        },
 
        {"tag": "options",
-        "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+        "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered", "what do you do?"],
         "responses": ["I am here to provide First Aid assistance","I can help with simple First Aid assiatnce before medics arrive"],
+        "context": [""]
+       },
+
+       {"tag": "personality",
+        "patterns": ["what are you?", "are you real"],
+        "responses": ["I am a chatbot that provides first aid assistance", "I am as real as you"],
         "context": [""]
        },
 

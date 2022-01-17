@@ -20,7 +20,7 @@ class ChatApplication:
     def _setup_main_window(self):
         self.window.title("FirstAid Chatbot")
         self.window.resizable(width=False, height=False)
-        self.window.configure(width=700, height=550, bg=BG_COLOR)
+        self.window.configure(width=1400, height=700, bg=BG_COLOR)
 
         #head label
         head_label = Label(self.window, bg=BG_COLOR, fg=TEXT_COLOR,

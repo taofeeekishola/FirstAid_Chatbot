@@ -12,7 +12,7 @@
         },
 
         {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "Life saver"],
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "Life saver", "much better now"],
          "responses": ["Happy to help!", "Any time!", "My pleasure"],
          "context": [""]
        },
@@ -41,7 +41,7 @@
         },
 
         {"tag": "Electric Shock",
-         "patterns": ["How to treat Electric Shock","Electric Shock","Help Electric Shock","electrocuted", "friend has been electrocuted","I need help with electric shock"],
+         "patterns": ["How to treat Electric Shock","Electric Shock","Help Electric Shock","electricuted", "friend has been electrocuted","help my friend just got electricuted","I need help with electric shock"],
          "responses": ["Switch off electrical current to break contact between person and electrical supply.Do not approach the person unless electrical supply has been switched off.If person isn't breathing call for medical assistance(999)."]
         },
 

@@ -1,6 +1,7 @@
 import json
 from preprocessing import tokenize, stem, bag_of_words
 import numpy as np
+import sys
 
 import torch
 import torch.nn as nn
@@ -8,6 +9,8 @@ from torch.utils.data import Dataset, DataLoader
 import matplotlib.pyplot as plt
 
 from model import NeuralNet
+from torch.utils.tensorboard import SummaryWriter
+writer = SummaryWriter("FirstAid_Chatbot")
 
 with open('intents.json', 'r') as f:
     intents = json.load(f)
@@ -61,10 +64,6 @@ input_size = len(x_train[0])
 learning_rate = 0.001
 num_epochs = 400
 
-# print(output_size, tags)
-# print(input_size, len(all_words))
-
-
 dataset = ChatDataset()
 train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=0)
 
@@ -75,6 +74,9 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
+
+def my_plot(epochs, loss):
+    plt.plot(epochs, loss)
 
 for epoch in range(num_epochs):
     for (words, labels) in train_loader:
@@ -90,7 +92,8 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
 
-    if (epoch +1) % 100 == 0:
+
+    if (epoch +1) % 50 == 0:
         print(f'epoch {epoch+1}/{num_epochs}, loss = {loss.item():.4f}')
 
 

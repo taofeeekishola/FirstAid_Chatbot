@@ -20,7 +20,7 @@ class ChatApplication:
     def _setup_main_window(self):
         self.window.title("FirstAid Chatbot")
         self.window.resizable(width=False, height=False)
-        self.window.configure(width=470, height=550, bg=BG_COLOR)
+        self.window.configure(width=700, height=550, bg=BG_COLOR)
 
         #head label
         head_label = Label(self.window, bg=BG_COLOR, fg=TEXT_COLOR,
@@ -69,10 +69,17 @@ class ChatApplication:
             return 
 
         self.msg_entry.delete(0, END)
-        msg1 = f"{sender}: {msg}"
+        msg1 = f"{sender}: {msg}\n\n"
         self.text_widget.configure(state=NORMAL)
         self.text_widget.insert(END, msg1)
         self.text_widget.configure(state=DISABLED)
+
+        msg2 = f"{bot_name}: {get_response(msg)}\n\n"
+        self.text_widget.configure(state=NORMAL)
+        self.text_widget.insert(END, msg2)
+        self.text_widget.configure(state=DISABLED)
+
+        self.text_widget.see(END)
 
 
 if __name__ == '__main__':

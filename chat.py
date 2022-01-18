@@ -48,9 +48,6 @@ def get_response(msg):
     return  "I do not understand...can you please clarify"
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
     
 
 
